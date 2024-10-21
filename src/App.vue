@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-const count = ref(0)
+
+const testHtml = ref("<span style=\"color: red\">This should be red.</span>")
+
 </script>
 
 <template>
-  <button @click="count++">Count is: {{ count }}</button>
+  <p v-html="testHtml"></p>
 </template>
